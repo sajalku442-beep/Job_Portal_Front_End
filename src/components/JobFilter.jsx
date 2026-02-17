@@ -43,7 +43,7 @@ const JobFilter = ({ item }) => {
           {item?.jobType}
         </Badge>
       </div>
-      <div className="flex gap-2">
+      <div className="flex flex-wrap gap-2">
         {item.requirements.map((data) => (
           <div>
             <Badge className="text-purple-800" variant="ghost">

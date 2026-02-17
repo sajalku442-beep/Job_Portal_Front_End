@@ -14,7 +14,7 @@ const LatestJobCards = ({ job }) => {
       <div className="flex items-center gap-2 my-2">
         <Button className={"bg-white hover:bg-gray-100"}>
           <Avatar className="w-13 h-13">
-            <AvatarImage  src={job?.company?.logo} />
+            <AvatarImage src={job?.company?.logo} />
           </Avatar>
         </Button>
         <div>
@@ -37,8 +37,8 @@ const LatestJobCards = ({ job }) => {
           {job?.salary}
         </Badge>
       </div>
-      <div className="flex gap-2">
-        {job.requirements.map((data) => (
+      <div className="flex flex-wrap gap-2">
+        {job?.requirements?.map((data) => (
           <div>
             <Badge className="text-purple-700" variant="ghost">
               {data}

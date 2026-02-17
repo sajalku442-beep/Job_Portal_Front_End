@@ -113,7 +113,7 @@ const Navbar = () => {
                   </Avatar>
                   <div>
                     <h4 className="font-bold ">
-                      Welcome <span>{user.name.toUpperCase()}</span>
+                      Welcome <span>{user?.name?.toUpperCase()}</span>
                     </h4>
                     <p className="text-sm text-muted-foreground">
                       {user?.profile?.bio}

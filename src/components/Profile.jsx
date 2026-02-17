@@ -39,7 +39,7 @@ const Profile = () => {
             <Pen />
           </Button>
         </div>
-        <p className="font-bold mt-2 mb-2">{user?.profile.bio}</p>
+        <p className="font-bold mt-2 mb-2">{user?.profile?.bio}</p>
         <div className="flex items-center gap-3 my-2">
           <Mail />
           <span>{user?.email}</span>
@@ -66,7 +66,7 @@ const Profile = () => {
               <a
                 target="_blank"
                 rel="noreferrer"
-                href={user.profile.resume}
+                href={user?.profile?.resume}
                 className="text-blue-500 w-full hover:underline cursor-pointer"
               >
                 {user?.profile?.resumeOriginalName}
